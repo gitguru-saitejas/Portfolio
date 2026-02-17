@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif; /* Updated for a more modern feel */
+    background: rgb(241, 245, 249); /* Light cool gray */
+    color: rgb(15, 23, 42); /* Darker slate for contrast */
+    line-height: 1.6;
+}
+
+header{
+    background: rgb(15, 23, 42); /* Deep Navy */
+    color: rgb(248, 250, 252);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h1{
+    font-size: 22px;
+    color: rgb(99, 102, 241); /* Indigo accent */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(248, 250, 252);
+    font-weight:bold;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(165, 180, 252); /* Lighter indigo hover */
+}
+
+.hero{
+    padding: 80px 20px;
+    text-align: center;
+    background-color: rgb(15, 23, 42); 
+    color: rgb(248, 250, 252); 
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgb(248, 250, 252); /* Clean white for the main headline */
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(148, 163, 184); /* Muted slate */
+}
+
+/* Section About ,Skills */
+
+section{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: rgb(15, 23, 42);
+    position: relative;
+}
+
+/* Decorative line under headings */
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: rgb(99, 102, 241);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Skills Grid */
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-card{
+    background-color: rgb(30, 41, 59); /* Soft Navy-Charcoal */
+    color: white;
+    padding: 25px;
+    border: 1px solid rgb(51, 65, 85); 
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover{
+    transform: translateY(-5px);
+    border-color: rgb(99, 102, 241);
+    box-shadow: 0px 10px 25px rgba(99, 102, 241, 0.2); 
+}
+
+/* Project Section */
+
+.projects-card{
+    background-color: white;
+    padding: 25px;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.projects-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styles */
+
+form input{
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 8px;
+    color: rgb(15, 23, 42);
+    margin-bottom: 15px;
+}
+
+form input:focus{
+    outline: none;
+    border-color: rgb(99, 102, 241); /* Indigo focus */
+}
+
+button{
+    padding: 12px 25px;
+    background-color: rgb(99, 102, 241); /* Indigo Primary */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(79, 70, 229); /* Slightly darker indigo */
+    box-shadow: 0px 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Footer Section */
+
+footer{
+    background-color: rgb(15, 23, 42);
+    color: rgb(148, 163, 184);
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(99, 102, 241, 0.1);
+}
